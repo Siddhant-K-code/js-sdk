@@ -143,6 +143,7 @@ export class Credentials {
         url,
         method: "POST",
         data: {
+          ...clientCredentials.customClaims,
           client_id: clientCredentials.clientId,
           client_secret: clientCredentials.clientSecret,
           audience: clientCredentials.apiAudience,

@@ -44,6 +44,12 @@ export interface ClientCredentialsConfig {
    * @type {string}
    */
   apiAudience: string;
+  /**
+   * Additional token-request fields. Standard credentials take precedence.
+   *
+   * @type {Record<string, string>}
+   */
+  customClaims?: Record<string, string>;
 }
 
 export interface ApiTokenConfig {
